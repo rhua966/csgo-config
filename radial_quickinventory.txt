@@ -14,8 +14,8 @@
 	// Place slots/weapons in the order you want them to show up
 	// SLOT NAME		// WEDGE WIDTH (must add up to 360)	
 	SMOKEGRENADE			60
-	HEGRENADE				60
 	FLASHBANG				60
+	HEGRENADE				60
 	MOLOTOV					60
 	DECOYGRENADE			60
 	C4						60
