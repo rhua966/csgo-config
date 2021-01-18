@@ -1,8 +1,10 @@
 #!/bin/sh
-# echo "$CSGO_HOME"
-csgo="$CSGO_HOME/csgo/"
-cfg="$CSGO_HOME/csgo/cfg/"
+csgo="/Users/rhua966/Library/Application Support/Steam/steamapps/common/Counter-Strike Global Offensive/csgo"
 
-cp ./radial_quickinventory.txt $csgo
-cp ./{autoexec.cfg, bhop.cfg, practice.cfg, cod.cfg, 1v1.cfg} $cfg
-echo "Copied all files in $(pwd) to $CSGO_HOME."
+echo "Copying all configs..."
+rsync -av  "cfg/" "${csgo}/cfg/"
+echo "Done"
+
+echo "Copying radial inventory configs..."
+rsync -av "radial_quickinventory.txt" "${csgo}/"
+echo "Done"
